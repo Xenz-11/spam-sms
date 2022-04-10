@@ -433,7 +433,7 @@ def wkwk(text):
         for x in text + '\n':
                 sys.stdout.write(x)
                 sys.stdout.flush()
-                sleep(random.random() * 0.1)
+                sleep(random.random() * 0.5)
 
 # Warna
 P = '\x1b[1;97m' # PUTIH
@@ -473,7 +473,7 @@ def kntl():
    //////////////////////////////////////////////////////////////////""")
     inuganz(inu)
 # INI JAN DI APA"IN NTAR RUSAK
-    april("\t\x1b[1;91mPake Awalan [8xxxx]")
+    wkwk("\t\x1b[1;91mPake Awalan [8xxxx]")
     inu = input ("\x1b[1;92m[+]\x1b[1;93m Masukan Nomer Target Stah ~> ")
     jumlah = int(input("[+] Masukan Jumlah Spam ~> "))
     api = requests.get("https://ainxbot-sms.herokuapp.com/api/spamsms",params={'phone':inu}).text
